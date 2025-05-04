@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cybersecurity Demo Redirect</title>
+    <script>
+      fetch("https://your-logging-endpoint.com/log", {
+        method: "POST",
+        body: JSON.stringify({
+          userAgent: navigator.userAgent,
+          timestamp: new Date()
+        }),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      });
+      setTimeout(() => {
+        window.location.href = "https://spotify.link/bhJB7VZe5Sb";
+      }, 2000); // Wait 2 seconds before redirect
+    </script>
+  </head>
+  <body>
+    <p>Redirecting you to Spotify...</p>
+  </body>
+</html>
